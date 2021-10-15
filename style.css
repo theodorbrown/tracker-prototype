@@ -4,3 +4,14 @@
     padding: 10px;
     border-radius: 4px;
 }
+
+h2 {
+    text-align: center;
+}
+
+table,th,td{border:1px solid black}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
