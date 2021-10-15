@@ -26,425 +26,251 @@
         </div>
     </nav>
     <div class="container">
-        <h2><p>Notre projet</p></h2>
-        <p>Partie 1 Concevoir une application pour gérer des séances d'entrainement. Enregistrer des parcours, afficher les performances de chaque séance.</p>
-        <h2><p>Consignes :</p></h2>
-
-        <p> 
-            Pour réaliser le cahier des charges fonctionnel :
-        </p>
+        <h2>Consignes :</h2>
+        <p>Pour réaliser le cahier des charges fonctionnel :</p>
+        <ul>            
+            <li>La demande du client, l'expression de son besoin. Pourquoi le client en a-t-il besoin ? Qu'est ce qui n'est pas satisfaisant dans son environnement pour qu'il ai besoin de dépenser de l'argent dans un nouveau projet.</li>
+            <li>Une étude concurrentielle. Quels sont les concurrents à ce projet? Les points forts et les faiblesses de chaque produit. Vous pouvez le faire sous forme de tableau avec des plus et des moins pour chaque. En quoi ces produits ne remplissent pas toutes les conditions pour que votre client les choisisse ?</li>
+            <li>Un descriptif des fonctionnalités attendues. (Que devra faire le programme vis à vis de l'utilisateur ?)</li>
+            <li>Un devis c'est-à-dire le prix que devra payer le client pour votre réalisation. Mettez vous en situation réelle et considérez que vous devez gagner votre vie avec le projet.</li>
+            <li>Un planning prévisionnel de réalisation (Combien de temps estimez vous pour chaque partie)</li>
+            <li>Ce cahier de charges est validé par le client, comme le contrat de ce qui devra être réalisé.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Rédaction du CDC :</h2>
+        <p>Nous avons décidé que l’application s'adresse à des athlètes cyclistes. Nous allons opter pour une application web (ou pas) qui sera développée en JavaScript (peut-être avec le framework Angular). Ces choix sont réfléchis et justifiés (on pourra en justifier si besoin).</p>
+        <p>L’expression du besoin de client : le client a besoin d’une application web pour gérer des séances d'entraînement. C'est-à-dire qu’il doit pouvoir planifier ses séances : durée, parcours et difficulté. Pour cela, il doit être en mesure de saisir des données et de les enregistrer,  notamment planifier son parcours à l’avance. Le client doit également bénéficier d’une sorte de compte rendu de chaque entraînement. L’application doit permettre d’afficher les données issues de son entraînement avec éventuellement des calculs sur les données recueillies pour afficher ses performances. Toutes les séances doivent être enregistrées pour que le client retrouve ses séances et puisse comparer ses performances par lui-même ou éventuellement par le biais de l’application en faisant des calculs (des moyennes) sur chaque entraînement.</p>
+        <p>Les données recueillies peuvent provenir :</p>
+            <p>- Du smartphone de l’utilisateur</p>
+            <p>- D’un objet connecté, un RaspberryPi qu’on gérera en deuxième partie du projet.</p>
         <p>
-            <ul style="list-style-type:square">            
-            <li>
-                La demande du client, l'expression de son besoin.
-                Pourquoi le client en a-t-il besoin ? Qu'est ce qui n'est pas satisfaisant dans son environnement pour qu'il ai besoin de dépenser de l'argent dans un nouveau projet.
-            </li>
-            <li>
-                Une étude concurrentielle. Quels sont les concurrents à ce projet? Les points forts et les faiblesses de chaque produit. Vous pouvez le faire sous forme de tableau avec des plus et des moins pour chaque. En quoi ces produits ne remplissent pas toutes les conditions pour que votre client les choisisse ?
-            </li>
-            <li>
-                Un descriptif des fonctionnalités attendues. (Que devra faire le programme vis à vis de l'utilisateur ?)
-            </li>
-            <li>
-                Un devis c'est-à-dire le prix que devra payer le client pour votre réalisation. Mettez vous en situation réelle et considérez que vous devez gagner votre vie avec le projet.
-            </li>
-           <li>
-                Un planning prévisionnel de réalisation (Combien de temps estimez vous pour chaque partie)
-           </li>
-           <li>
-            Ce cahier de charges est validé par le client, comme le contrat de ce qui devra être réalisé.
-           </li>
-            </ul>
-
-        </p>
-        <p>
-            Nous avons décidé que l’application s'adresse à des athlètes cyclistes. Nous allons opter pour une application web (ou pas) qui sera développée en JavaScript (peut-être avec le framework Angular).
-            Ces choix sont réfléchis et justifiés (on pourra en justifier si besoin).
-        </p>
-        <p>
-            L’expression du besoin de client : le client a besoin d’une application web pour gérer des séances d'entraînement. 
-            C'est-à-dire qu’il doit pouvoir planifier ses séances : durée, parcours et difficulté. Pour cela, il doit être en mesure de saisir des données et de les enregistrer,  notamment planifier son parcours à l’avance.
-            Le client doit également bénéficier d’une sorte de compte rendu de chaque entraînement. L’application doit permettre d’afficher les données issues de son entraînement avec éventuellement des calculs sur les données recueillies pour afficher ses performances. 
-            Toutes les séances doivent être enregistrées pour que le client retrouve ses séances et puisse comparer ses performances par lui-même ou éventuellement par le biais de l’application en faisant des calculs (des moyennes) sur chaque entraînement.
-         </p>
-         <p>
-            Les données recueillies peuvent provenir :
-            <p>
-                - Du smartphone de l’utilisateur
-            </p>
-            <p>
-                - D’un objet connecté, un RaspberryPi qu’on gérera en deuxième partie du projet.   
-            </p>
-         </p>
-         <p>
             Pourquoi le client a-t-il besoin de cette application? Plusieurs applications sont disponibles à travers le web que ce soit en version mobile ou web mais elles présentent toutes des défauts.
             Les applications les plus complètes et répondant aux attentes ne sont jamais gratuites à 100%, ce qui peut freiner plus d’un utilisateur à utiliser l’application.
             De plus, très peu d’applications disponibles sur le marché stockent leurs données et sont développées en France, notre client veut une application 100% française. 
             D’autres applications sont intéressantes pour le tracking en temps réel et la création de parcours mais ne permettent pas de "gérer" ni d’établir un suivi de ses performances.
             De plus, une application comme Strava pourvues de nombreuses fonctionnalités pose parfois des soucis aux utilisateurs : difficultés d’utilisation de certaines fonctionnalités (non intuitif, trop complexe).           
-         </p>
-         <p>
-            Concernant la concurrence, les principaux concurrents sont : 
-            <ul style="list-style-type:circle">
-            <li>
-                Strava
-            </li>
-            <li>
-                MapMyRide
-            </li>
-            <li>
-                RunKeeper
-            </li>
-            <li>
-                Google Fit
-            </li>
-            <li>
-                Komoot
-            </li>
-            <li>
-                RidewithGPS
-            </li>
-            <li>
-                BikeMap
-            </li>
-            </ul>           
-         </p>
-         <p>
-            <table border="1">
-                <tr>
-                  <th></th>
-                  <th>Points forts</th>
-                  <th>Points faibles</th>
-                  <th>Prix</th>
-                </tr>
-                <tr>
-                  <td>Strava</td>
-                  <td>
-                      <ul>
-                          <li>
-                            Très très complète
-                          </li>
-                          <li>
-                            Possibilité d’utilisation de capteurs & d’écrans
-                          </li>
-                      </ul> 
-                  </td>
-                  <td>
-                      <ul>
-                          <li>
-                            Non intuitive pour un utilisateur lambda
-                          </li>
-                          <li>
-                            Certaines fonctions intéressantes ne sont pas disponibles dans sa version gratuite, suivi complet, planification, programmes d'entraînement
-                          </li>
-                      </ul>
-                  </td>
-                  <td>
-                      <ul>
-                        <li>
-                            Version gratuite limitée & Version payante (59.99€ annuel)
-                        </li>
-                      </ul>
-                  </td>
-                </tr>
-                <tr>
-                <td>MapMyRide</td>
+        </p>
+        <p>Concernant la concurrence, les principaux concurrents sont :</p>
+        <ul>
+            <li>Strava</li>
+            <li>MapMyRide</li>
+            <li>RunKeeper</li>
+            <li>Google Fit</li>
+            <li>Komoot</li>
+            <li>RidewithGPS</li>
+            <li>BikeMap</li>
+        </ul>           
+        <table>
+            <tr>
+                <th></th>
+                <th>Points forts</th>
+                <th>Points faibles</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>Strava</td>
                 <td>
                     <ul>
-                        <li>
-                          Interface soignée
-                        </li>
-                        <li>
-                          Programmes d'entraînement
-                        </li>
-                        <li>
-                            Une quantité de données énorme sur les parcours
-                                (Temps, dénivelé, nombre de pas,calories, fréquence cardiaque, cadence, puissance... )
-                        </li>
-                        <li>
-                            Navigation vocale
-                        </li>
-                        <li>
-                            Suivi en direct possible par un tier dans la version payante
-                        </li>
+                        <li>Très très complète</li>
+                        <li>Possibilité d’utilisation de capteurs & d’écrans</li>
                     </ul> 
                 </td>
                 <td>
                     <ul>
-                        <li>
-                         Plus axé santé que performance
-                        </li>
-                        <li>
-                         Pas de création de trajet, uniquement du suivi
-                        </li>
+                        <li>Non intuitive pour un utilisateur lambda</li>
+                        <li>Certaines fonctions intéressantes ne sont pas disponibles dans sa version gratuite, suivi complet, planification, programmes d'entraînement</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                      <li>
-                        Version gratuite limitée & Version payante (6.49€ mensuel ou 31.99 annuel)                        
-                      </li>
+                        <li>Version gratuite limitée & Version payante (59.99€ annuel)</li>
                     </ul>
                 </td>
-              </tr>
             </tr>
             <tr>
-            <td>Runkeeper</td>
-            <td>
-                <ul>
-                    <li>
-                       Widgets android & IOS
-                    </li>
-                    <li>
-                      Programmes d'entraînement
-                    </li>
-                    <li>
-                        Une quantité de données satisfaisante sur le parcours (Temps, dénivelé, nombre de pas,calories…)
-                    </li>
-                </ul> 
-            </td>
-            <td>
-                <ul>
-                    <li>
-                        Certaines fonctionnalités sont payantes
-                    </li>
-                    <li>
-                        Plus axé santé
-                        que performance
-                        
-                    </li>
-                    <li>
-                        Pas de création de trajet, uniquement du suivi
-                    </li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                  <li>
-                    Version gratuite limitée & Version payante (9.99€ mensuel, 39.99 annuel)                      
-                  </li>
-                </ul>
-            </td>
+                <td>MapMyRide</td>
+                <td>
+                    <ul>
+                        <li>Interface soignée</li>
+                        <li>Programmes d'entraînement</li>
+                        <li>Une quantité de données énorme sur les parcours (Temps, dénivelé, nombre de pas,calories, fréquence cardiaque, cadence, puissance... )</li>
+                        <li>Navigation vocale</li>
+                        <li>Suivi en direct possible par un tier dans la version payante</li>
+                    </ul> 
+                </td>
+                <td>
+                    <ul>
+                        <li>Plus axé santé que performance</li>
+                        <li>Pas de création de trajet, uniquement du suivi</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Version gratuite limitée & Version payante (6.49€ mensuel ou 31.99 annuel)                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Runkeeper</td>
+                <td>
+                    <ul>
+                        <li>Widgets android & IOS</li>
+                        <li>Programmes d'entraînement</li>
+                        <li>Une quantité de données satisfaisante sur le parcours (Temps, dénivelé, nombre de pas,calories…)</li>
+                    </ul> 
+                </td>
+                <td>
+                    <ul>
+                        <li>Certaines fonctionnalités sont payantes</li>
+                        <li>Plus axé santé que performance</li>
+                        <li>Pas de création de trajet, uniquement du suivi</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Version gratuite limitée & Version payante (9.99€ mensuel, 39.99 annuel)</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>Komoot</td>
                 <td>
                     <ul>
-                        <li>
-                            Beaucoup de types de sports disponible
-                        </li>
-                        <li>
-                          Interface intuitive
-                        </li>
-                        <li>
-                            Très complète dans version payante
-                        </li>
-                        <li>
-                            Communauté active sur l’application qui organisent des événements et partagent leurs enregistrements de parcours
-                        </li>
+                        <li>Beaucoup de types de sports disponible</li>
+                        <li>Interface intuitive</li>
+                        <li>Très complète dans version payante</li>
+                        <li>Communauté active sur l’application qui organisent des événements et partagent leurs enregistrements de parcours</li>
                     </ul> 
                 </td>
                 <td>
                     <ul>
-                        <li>
-                            Application expensive (30 euros pour l’utiliser partout, sinon 3 euros par région)
-                        </li>
-                        <li>
-                            Impossible de créer un itinéraire directement sur l’application, il faut l’importer
-                            
-                        </li>
+                        <li>Application expensive (30 euros pour l’utiliser partout, sinon 3 euros par région)</li>
+                        <li>Impossible de créer un itinéraire directement sur l’application, il faut l’importer</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                      <li>
-                        Version gratuite limitée & Version payante (4.99 mensuel, 59.99€ annuel)
-                      </li>
-                      <li>
-                        Micros transactions nécessaires pour avoir accès a toute les zones géographiques disponibles
-                      </li>
+                      <li>Version gratuite limitée & Version payante (4.99 mensuel, 59.99€ annuel)</li>
+                      <li>Micros transactions nécessaires pour avoir accès a toute les zones géographiques disponibles</li>
                     </ul>
                 </td>
             </tr>
-            <td>RidewithGPS</td>
-            <td>
-                <ul>
-                    <li>
-                        Navigation vocale
-                    </li>
-                    <li>
-                        Création d'itinéraire personnels
-                    </li>
-                    <li>
-                        Une quantité de données satisfaisante sur le parcours (Temps, montée, descente, dénivelé, rythme…)
-
-                    </li>
-                    <li>
-                        Suivi des trajets
-                    </li>
-                    <li>
-                        Possibilité d’utilisation de capteurs & d’écrans
-                    </li>
-                    <li>
-                        Communauté active sur l’application qui organisent des événements et partagent leurs enregistrements de parcours
-                    </li>
-                </ul>
-                <td>
-                <ul>
-                    <li>
-                        Fonctionnalités intéressantes payantes (Hors ligne & enregistrement
-                    </li>
-                </ul>
-                </td>
-                <td>
-                <ul>
-                    <li>
-                        Version gratuite basique & Version payante (6.49€ mensuel ou 54.99€ annuel pour la version 
-                    </li>               
-                </ul>
-                </td>
-            </td>
             <tr>
-            <td>Google Fit</td>
-            <td>
-                <ul>
-                    <li>
-                        Très simple d’utilisation
-                    </li>
-                    <li>
-                        Détection automatique du type de trajet (Running, Jogging,Cyclism)
-                    </li>
-                    <li>
-                        Une quantité de données satisfaisante sur le parcours (Temps, dénivelé, nombre de pas,calories…)                      
-                    </li>
-                    <li>
-                        Widgets android & IOS
-                    </li>
-                </ul>
+                <td>RidewithGPS</td>
                 <td>
-                <ul>
-                    <li>
-                        Plus axé santé que performance
-                    </li>
-                    <li>
-                        Pas de création de trajet, uniquement du suivi
-                    </li>
-                    <li>
-                        Le suivi a tendance à simplifier les virages en ligne droite sur le récap.
-                    </li>
-                    <li>
-                        Enregistre en permanence pour la détection automatique
-                    </li>
-                </ul>
+                    <ul>
+                        <li>Navigation vocale</li>
+                        <li>Création d'itinéraire personnels</li>
+                        <li>Une quantité de données satisfaisante sur le parcours (Temps, montée, descente, dénivelé, rythme…)</li>
+                        <li>Suivi des trajets</li>
+                        <li>Possibilité d’utilisation de capteurs & d’écrans</li>
+                        <li>Communauté active sur l’application qui organisent des événements et partagent leurs enregistrements de parcours</li>
+                    </ul>
                 </td>
                 <td>
-                <ul>
-                    <li>
-                        Gratuit a 100 %
-                    </li>               
-                </ul>
+                    <ul>
+                        <li>Fonctionnalités intéressantes payantes (Hors ligne & enregistrement</li>
+                    </ul>
                 </td>
-            </td>
+                <td>
+                    <ul>
+                        <li>Version gratuite basique & Version payante (6.49€ mensuel ou 54.99€ annuel pour la version </li>               
+                    </ul>
+                </td>
             </tr>
             <tr>
-            <td>BikeMap (Interface web & Appli)</td>
-            <td>
-                <ul>
-                    <li>
-                        Tracker grâce à un smartphone, une tablette ou objet connecté
-                    </li>
-                    <li>
-                        Navigation vocale
-                    </li>
-                    <li>
-                        Interface soignée                     
-                    </li>
-                    <li>
-                        Assez complète
-                    </li>
-                </ul>
+                <td>Google Fit</td>
                 <td>
-                <ul>
-                    <li>
-                        Fonctionnalité hors ligne payante
-                    </li>
-                    <li>
-                        Widgets uniquement sur IOS
-                    </li>
-                </ul>
+                    <ul>
+                        <li>Très simple d’utilisation</li>
+                        <li>Détection automatique du type de trajet (Running, Jogging,Cyclism)</li>
+                        <li>Une quantité de données satisfaisante sur le parcours (Temps, dénivelé, nombre de pas,calories…)</li>
+                        <li>Widgets android & IOS</li>
+                    </ul>
                 </td>
                 <td>
-                <ul>
-                    <li>
-                        Version gratuite limitée & Version payante (9.99€ mensuel ou 44.99€ annuel)
-                    </li>               
-                </ul>
+                    <ul>
+                        <li>lus axé santé que performance</li>
+                        <li>Pas de création de trajet, uniquement du suivi</li>
+                        <li>Le suivi a tendance à simplifier les virages en ligne droite sur le récap.</li>
+                        <li>Enregistre en permanence pour la détection automatique</li>
+                    </ul>
                 </td>
-            </td>
+                <td>
+                    <ul>
+                        <li>Gratuit a 100 %</li>               
+                    </ul>
+                </td>
             </tr>
-              </table>
-         </p>
-         <p>
-            Les concurrents principaux sont RidewithGPS, Strava et Komoot puisque les autres applications ne sont pas assez centrées sur le cyclisme.
-            Il n’y a pas d’application totalement gratuite possédant assez de fonctions pour satisfaire notre client.            
-         </p>
-         <p>
-            De plus, toutes les solutions intéressantes ne remplissent pas les critères d'accessibilité de notre client, les applications du marché sont trop chères pour un utilisateur lambda.
-            Notre client désire un service gratuit pour ses utilisateurs, afin de les récompenser de leur fidélité envers leur marque de chaussures.
-            Il leur faut donc une application totalement gratuite qui possède assez de fonctions pour satisfaire leur demande, suivi hors ligne, possibilité de créer des parcours, entraînements ...            
-         </p>
-         <p>
-            Beaucoup de fonctionnalités sont possibles pour ce type d’application. On a vu dans l’étude de la concurrence que beaucoup d’applications sont très complètes et disposent de fonctionnalités complexes : (navigation vocale, détection automatique du type de trajet, événements live et partage de parcours, programmes d’entrainements conçus par l’application en fonction des statistiques de performances…).
-         </p>
-         <p>
-            Mais pour répondre le mieux possible et rester centré sur ce qui est important, à savoir, l’enregistrement d’un entraînement, d’un parcours et l’affichage des données des entraînements, nous avons fixé les fonctionnalités principales pour avoir une application avec des bases solides et répondant aux besoins du client.
-         </p>
-         <p>
-             Fonctionnalités
-             <ul style="list-style-type:disc">
-                 <li>
-                    S’inscrire
-                 </li>
-                 <li>
-                    Se connecter
-                 </li>
-                 <li>
-                    Ajouter un entrainement : + ajouter un parcours ou non
-                 </li>
-                 <li>
-                    Enregistrer un entraînement
-                 </li>
-                 <li>
-                    Afficher la liste des entrainements
-                 </li>
-                 <li>
-                    Accéder à un entraînement : afficher ses données
-                 </li>
-                 <li>
-                    Accéder à une page statistiques
-                 </li>
-             </ul>
-         </p>
-         <p>
-            Le programme demandera à l’utilisateur de s’identifier. Chaque profil d’utilisateur contiendra la liste des entraînements de ce dernier ainsi que toutes les données liées.
-         </p>
-         <p>
-            Un utilisateur identifié verra apparaître la liste de ces entraînements passés s' il en dispose. Il verra également un bouton lui permettant d’ajouter un nouvel entraînement.
-         </p>
-         <p>
-            Un utilisateur peut ajouter un entrainement avec le bouton : il pourra décider de créer un parcours ou non.
+            <tr>
+                <td>BikeMap (Interface web & Appli)</td>
+                <td>
+                    <ul>
+                        <li>Tracker grâce à un smartphone, une tablette ou objet connecté</li>
+                        <li>Navigation vocale</li>
+                        <li>Interface soignée</li>
+                        <li>Assez complète</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Fonctionnalité hors ligne payante</li>
+                        <li>Widgets uniquement sur IOS</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Version gratuite limitée & Version payante (9.99€ mensuel ou 44.99€ annuel)</li>               
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>
+        Les concurrents principaux sont RidewithGPS, Strava et Komoot puisque les autres applications ne sont pas assez centrées sur le cyclisme.
+        Il n’y a pas d’application totalement gratuite possédant assez de fonctions pour satisfaire notre client.            
+        </p>
+        <p>
+        De plus, toutes les solutions intéressantes ne remplissent pas les critères d'accessibilité de notre client, les applications du marché sont trop chères pour un utilisateur lambda.
+        Notre client désire un service gratuit pour ses utilisateurs, afin de les récompenser de leur fidélité envers leur marque de chaussures.
+        Il leur faut donc une application totalement gratuite qui possède assez de fonctions pour satisfaire leur demande, suivi hors ligne, possibilité de créer des parcours, entraînements ...            
+        </p>
+        <p>
+        Beaucoup de fonctionnalités sont possibles pour ce type d’application. On a vu dans l’étude de la concurrence que beaucoup d’applications sont très complètes et disposent de fonctionnalités complexes : (navigation vocale, détection automatique du type de trajet, événements live et partage de parcours, programmes d’entrainements conçus par l’application en fonction des statistiques de performances…).
+        </p>
+        <p>
+        Mais pour répondre le mieux possible et rester centré sur ce qui est important, à savoir, l’enregistrement d’un entraînement, d’un parcours et l’affichage des données des entraînements, nous avons fixé les fonctionnalités principales pour avoir une application avec des bases solides et répondant aux besoins du client.
+        </p>
 
-         </p>
-         <p>
-            Un utilisateur aura accès à une page statistique ou il pourra comparer les données de chaque entraînement pour suivre sa progression.
-         </p>
+        <p>Fonctionnalités :</p>
+        <ul>
+            <li>S’inscrire</li>
+            <li>Se connecter</li>
+            <li>Ajouter un entrainement : + ajouter un parcours ou non</li>
+            <li>Enregistrer un entraînement</li>
+            <li>Afficher la liste des entrainements</li>
+            <li>Accéder à un entraînement : afficher ses données</li>
+            <li>Accéder à une page statistiques</li>
+        </ul>
 
-         <p>
-            Octobre -> fevrier </br>
-            Nous ne savons pas combien de temps nous allons travailler sur le projet tutoré. Nous sommes mi-octobre et le projet sera terminé mi-février. Ce qui fait 5 mois. Nous n’avons pas 5 mois considéré entièrement au projet tutoré car nous avons des semaines de cours. Nous allons plutôt compter 3 mois. Donc nous allons travailler 
-            
-         </p>
-         
+        <p>
+        Le programme demandera à l’utilisateur de s’identifier. Chaque profil d’utilisateur contiendra la liste des entraînements de ce dernier ainsi que toutes les données liées.
+        </p>
+        <p>
+        Un utilisateur identifié verra apparaître la liste de ces entraînements passés s' il en dispose. Il verra également un bouton lui permettant d’ajouter un nouvel entraînement.
+        </p>
+        <p>
+        Un utilisateur peut ajouter un entrainement avec le bouton : il pourra décider de créer un parcours ou non.
+
+        </p>
+        <p>
+        Un utilisateur aura accès à une page statistique ou il pourra comparer les données de chaque entraînement pour suivre sa progression.
+        </p>
+
+        <p>
+        Octobre -> fevrier </br>
+        Nous ne savons pas combien de temps nous allons travailler sur le projet tutoré. Nous sommes mi-octobre et le projet sera terminé mi-février. Ce qui fait 5 mois. Nous n’avons pas 5 mois considéré entièrement au projet tutoré car nous avons des semaines de cours. Nous allons plutôt compter 3 mois. Donc nous allons travailler 
+        </p>   
     </div>
 </body>
 </html>
