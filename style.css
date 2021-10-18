@@ -20,3 +20,10 @@ table {
 ul {
     list-style-type: square;
 }
+
+.scroll {
+    margin:4px, 4px;
+    background-color: white;
+    width: 100%;
+    overflow-y: hidden;
+}
