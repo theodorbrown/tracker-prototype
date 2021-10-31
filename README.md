@@ -14,3 +14,5 @@ Tuteur : Emmanuel Medina
 Mot clés : santé, performance, entrainement, parcours
 
 Equipe de travail : Angel et moi-même (Theodor)
+**NOTE**
+Passage en alternance (Theodor), Angel sera désormais le seul à travailler sur ce projet à compter du 1 novembre 2021.
