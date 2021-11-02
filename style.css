@@ -9,6 +9,9 @@ h2 {
     text-align: center;
 }
 
+img {
+    border: 4px solid #555;
+}
 table,th,td {
     border: 1px solid black;
 }
@@ -27,3 +30,4 @@ ul {
     width: 100%;
     overflow-y: hidden;
 }
+

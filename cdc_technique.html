@@ -28,22 +28,68 @@
     <div class="container">
         <h2>📋 Consignes :</h2>
         <p>Pour réaliser le cahier des charges technique :</p>
-        <p>
+        <li>
             Le cahier des charges techniques doit comporter un argumentaire 
             sur les technologies retenues. Il doit contenir des schémas pour 
             expliquer l'organisation des données (modélisation de la base de données), 
             les natures des échanges de données entre les différentes parties (services web). 
             Il faut argumenter sur le choix d'un cadriciel ou d'une technologie.
-        </p>
-        <p>
+        </li>
+        <li>
             Le cahier des charges technique a pour but de convaincre votre entreprise 
             (vos collègues, votre responsable) que les choix que vous avez retenus sont 
             les bons pour mener à bien le projet dans les temps et les coûts validés par 
             le client.
-        </p>
+        </li>
     </div>
     <div class="container">
         <h2>📚 Rédaction du CDC technique:</h2>
+        <p>Ce projet est une mise en situation professionnelle. Nous avons imaginé travailler pour 
+            une entreprise qui a décidé d’offrir à ses employés une application de forme et de bien-être. 
+            Nous sommes les développeurs de l’application et nous devons répondre à leur demande. 
+            L’entreprise pour laquelle nous allons travailler est une entreprise de la région nommée 
+            <strong>Moustache Bikes</strong>, située à Capavenir Vosges.
+        </p>
+        <div>
+            <h2> <img src="attachments/angular_logo_small.png" width= "5%" alt="angular_logo"> Choix de la solution</h2>
+            <p>Nous avons choisi Angular pour mener a bien ce projet. Angular est un framework opensource basé en Typescript qui permet la création d'application web. Ce framework est basé sur une architecture Modèle Vue Controlleur, il est très fluide et permet une forte maintenabilité et une amélioration du travail collaboratif.
+                Son système de routes et de formulaires est également très pratique.
+                Notre projet utilisera donc typescript, html et scss grâce a ce framework.
+                <h5>🖥 Interface l'application</h5>
+                Rajouter screen + explication une fois visuel projet fini
+                Rajouter leaflet
+            </p>
+            <h5>💾 Base de données </h5>
+            <p>Les données nécessaires au fonctionnement de l'application seront stockées dans la base de données MySql suivante.</p>
+            <p>Les données d'utilisateurs sont stockées dans la table user, lors de l'inscription, les informations suivantes seront demandés : 
+                <ul>
+                    <li>Prénom</li>
+                    <li>Nom</li>
+                    <li>Adresse mail professionnelle lié a l'entreprise (La table mail_list contiendra la liste de tout les mails de l'entreprise et permettra de vérifier si l'utilisateur qui s'inscrit travaille bien pour notre client)</li>
+                    <li>Mot de passe (voir la partie connexion & sécurité)</li>
+                </ul>
+            </p>
+            <img src="attachments/database_graph.png"  width= "75%" alt="database">
+            <p>
+            Un parcours (route) est forcément lié a un utilisateur grâce a la clé étrangère user_id qui est NOT NULL, cependant vu qu'un utilisateur a la possibilité d'ajouter ses propres entrainements 
+            et qu'il y aura des entrainements (training) déjà présent dans l'application, le champ est passé en NULL.
+            Il s'agit d'une cardinalité OnetoMany pour toutes les clés étrangères de la base de données.
+            </p>
+            <p>
+                Il y aura également la possibilité de rajouter des triggers afin d'éviter certaines erreurs, comme par exemple pour la vérification des emails ou pour éviter un parcours avec qu'une seule étape.
+            </p>
+            <p>
+            Les données respectives des parcours et entrainements sont stockées dans leurs tables _data, étape par étape.
+            Les étapes sont obtenues en parcourant un fichier GPX que l'utilisateur fournira lui même. (voir exemple en dessous)
+            Ainsi, chaque étape comporte sa latitude et sa longitude ainsi que le nom de l'étape si il y en a un (NULL).
+            </p>
+            <img src="attachments/gpx_example.webp"  width= "35%" alt="gpx file">
+            <p>
+                Nous récupérons les infos fournies par le fichier gpx de l'utilisateur grâce a la library <a href="https://github.com/Luuka/GPXParser.js">GPXParser</a>, puisqu'elle supporte le Typescript depuis sa dernière release, qui date de Juin dernier.
+                Cette library comporte une documentation satisfaisante et un nombre d'utilisateurs satisfaisant, puisqu'il y a des exemples avec les repertoires github des gens qui l'utilise pour leurs projets.
+                                  
+            </p>
+        </div>
     </div>
 </body>
 <footer class="bg-light text-center text-lg-start fixed-bottom">
